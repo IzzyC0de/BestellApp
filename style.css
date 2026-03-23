@@ -185,7 +185,7 @@ div[class*="_Separator"] span{
 
 
 
-/* FOOTER ----------------------------------------*/
+/* FOOTER ---------------------------------------*/
 
 #footerContent{
   max-width: 560px;
@@ -196,4 +196,5 @@ div[class*="_Separator"] span{
   font-weight: 400;
   color: white;
 }
+
 

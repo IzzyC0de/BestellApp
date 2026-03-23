@@ -1,0 +1,199 @@
+/* HEADER */
+
+
+.container{
+  display: flex;
+  align-items: center;
+  max-width: var(--section-width);
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+.logo_header{
+    width: 82px;
+}
+
+#menu{
+    font-size: 34px;
+    background: none;
+    border: none;
+}
+
+/* MAIN --------------------------------------------*/
+/* HERO-Section */
+
+.hero_section{
+    width: 100%;
+    align-items: center;
+}
+
+.hero{
+    position: relative;
+}
+
+.hero img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.hero_logo img{
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+    width: 240px;
+    height: 240px;
+ 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.hero_content{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.burger{
+    color: var(--primary-color);
+}
+
+.h1Hero span{
+    font-family: var(--bold-font);
+    font-weight: bold;
+    font-size: var(--font-h1);
+}
+
+.rating{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 2px 10px 2px 10px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+
+}
+
+.ratingNumber{
+    margin-left: 8px;
+    margin-right: 5px;
+    font-size: var(--font-span-big);
+    font-weight: 600;
+}
+
+.numberOfRatings{
+    font-size: 10px;
+}
+
+#rating_star{
+    font-size: 30px;
+}
+
+.descriptionHero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-h4);
+}
+
+/* CONTENT & BASKET */
+
+#burgerMenu, #saladMenu, #pizzaMenu{
+    width: 100%;
+    margin-top: 100px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#burgerList, #pizzaList, #saladList {
+    display: flex;
+    flex-wrap: wrap;       /* Damit die Gerichte in die nächste Zeile springen */
+    justify-content: flex-start; /* Die Karten innerhalb der 1440px links beginnen lassen */
+    gap: 30px;             /* Abstand zwischen den Karten */
+    
+    width: 100%;
+    max-width: 1440px;     /* Die magische Grenze */
+    
+    /* ZENTRIERUNG: */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;      /* Abstand zum orangenen Balken */
+    
+    padding: 0 20px;       /* Puffer für mobile Ansichten */
+    box-sizing: border-box; 
+}
+
+div[class*="_Separator"]{
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    max-width: 100%;
+    right: 50%;
+
+
+    height: 60px;
+    background-color: var(--primary-color);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+
+div[class*="_Separator"] span{
+    font-size: var(--font-h2);
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    margin-left: 30px;
+}
+
+#productContainer{
+    width: 100%;
+}
+
+.productlist{
+    width: 100%;
+    min-width: var(--section-width);
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.separatorContent{
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+
+/* FOOTER ----------------------------------------*/
+
+#footerContent{
+  max-width: 560px;
+}
+
+#footerContent span{
+  font-size: var(--font-span-big);
+  font-weight: 400;
+  color: white;
+}
+

@@ -1,0 +1,85 @@
+/* Diese Klasse verknüpft dein HTML mit der Schriftart */
+.material-symbols-rounded {
+  font-family: 'Material Symbols Rounded';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;      /* Standardgröße */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: rgb(255, 255, 255);
+  /* Sorgt für scharfe Icons im Browser */
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  /* Farben */
+  --primary-color: #E76C1F;
+  --senodary-color: #FDEADC;
+  --spacegray-color: #363534;
+
+  /* Fonts */
+  --main-font: 'Palanquin', sans-serif;
+  --bold-font: 'Palanquin Dark', sans-serif;
+
+  --font-h1: 68px;
+  --font-h2: 40px;
+  --font-h3: 32px;
+  --font-h4: 24px;
+  --font-span-little: 16px;
+  --font-span-big: 18px;
+
+  --text-color-dark: #363534;
+  --text-color-light: #FFFFFF;
+  --text-color-creamyorange: #FDEADC;
+
+  /* Breite des Inhaltes */
+  --section-width: 1400px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; /* Optional: Entfernt Standard-Abstände vom Browser */
+}
+
+body{
+  line-height: 1.5;                           /* Verbessert die Lesbarkeit von Text extrem */
+  -webkit-font-smoothing: antialiased;        /* Macht Schriften auf Mac schöner */
+  font-family: var(--main-font);
+  /* overflow-x: hidden; */
+}
+
+
+header{
+  background-color: var(--primary-color);
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* FOOTER ---------------------------------------------*/
+
+footer{
+  height: 84px;
+  background-color: var(--primary-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

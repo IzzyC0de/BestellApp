@@ -1,116 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Styles/standard.css">
-    <link rel="stylesheet" href="./Styles/icons.css">
-    <link rel="stylesheet" href="./Styles/fonts.css">
-    <link rel="stylesheet" href="./Styles/assets.css">
-    <link rel="stylesheet" href="./Styles/basket.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./Assets/img/favicon2.svg" type="image/x-icon">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/standard.css" />
+    <link rel="stylesheet" href="./Styles/icons.css" />
+    <link rel="stylesheet" href="./Styles/fonts.css" />
+    <link rel="stylesheet" href="./Styles/assets.css" />
+    <link rel="stylesheet" href="./Styles/basket.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="./Assets/img/favicon2.svg"
+      type="image/x-icon"
+    />
+
+    <script src="./Scripts/db.js" defer></script>
+    <script src="./Scripts/template.js" defer></script>
+    <script src="./script.js" defer></script>
+
     <title>BestellApp</title>
-</head>
-<body>
+  </head>
+  <body onload="renderDishes()">
     <header>
-        <div class="container">
-            <img class="logo_header" src="./Assets/img/Logo 02.png" alt="Logo der BestellApp">
-            <nav>
-                <button id="menu" class="material-symbols-rounded">menu</button>  
-            </nav>  
-        </div>
+      <div class="container">
+        <img
+          class="logo_header"
+          src="./Assets/img/Logo 02.png"
+          alt="Logo der BestellApp"
+        />
+        <nav>
+          <button id="menu" class="material-symbols-rounded">menu</button>
+        </nav>
+      </div>
     </header>
 
-<!-- MAIN ----------------------------------------------------------------------------------------->
+    <!-- MAIN ----------------------------------------------------------------------------------------->
 
     <main>
-        <div class="hero_section">
-            <div class="hero">   
-                <img src="./Assets/img/hero.png" alt="Hero Bild">
-                
-                <div class="hero_logo">
-                    <img src="./Assets/img/Burger logo.png" alt="Logo imf Hero Bereich">
-                </div>
-            </div> 
-            <div class="hero_content">
-                <div class="h1Hero">
-                    <h1><span class="burger">Burger</span><span class="house">House</span></h1>
-                </div>
-                
-                <div class="rating">
-                    <span id="rating_star" class="material-symbols-rounded">star_rate</span>
-                    <span class="ratingNumber">4.1</span>
-                    <span class="numberOfRatings">(312)</span>
-                </div>
-            </div>
+      <div class="hero_section">
+        <div class="hero">
+          <img src="./Assets/img/hero.png" alt="Hero Bild" />
 
-            <div class="descriptionHero">
-                <span>The best of Burgers, Pizza, and Greens, all in one great place.</span>
-            </div>
-            
+          <div class="hero_logo">
+            <img
+              src="./Assets/img/Burger logo.png"
+              alt="Logo imf Hero Bereich"
+            />
+          </div>
+        </div>
+        <div class="hero_content">
+          <div class="h1Hero">
+            <h1>
+              <span class="burger">Burger</span><span class="house">House</span>
+            </h1>
+          </div>
+
+          <div class="rating">
+            <span id="rating_star" class="material-symbols-rounded"
+              >star_rate</span
+            >
+            <span class="ratingNumber">4.1</span>
+            <span class="numberOfRatings">(312)</span>
+          </div>
         </div>
 
-        <div id="productContainer">
-            <div class="productList">
-                <section id="burgerMenu">
-                    <div class="burger_Separator">
-                        <div class="separatorContent">
-                            <img src="./Assets/img/Burger_menu.png" alt="Burger Menu Icon">
-                            <span>Burger & Sandwiches</span>
-                        </div>  
-                    </div>
-                    
-                        
-                    <div id="burgerList">
-                        <span>Burger & Sandwiches</span>
-                        <span>Burger & Sandwiches</span>
-                        <span>Burger & Sandwiches</span>
-                        <span>Burger & Sandwiches</span>
-                        <span>Burger & Sandwiches</span>
-                        <span>Burger & Sandwiches</span>
-                        <span>Burger & Sandwiches</span>
-                        <span>Burger & Sandwiches</span>
-                    </div>
-                </section>
-                <section id="pizzaMenu">
-                    <div class="pizza_Separator">
-                        <div class="separatorContent">
-                            <img src="./Assets/img/Pizza_menu.png" alt="Pizza Menu Icon">
-                            <span>Pizza  (30cm)</span>
-                        </div>
-                        
-                    </div>
-                    <div id="pizzaList"></div>
-                </section>
-                <section id="saladMenu">
-                    <div class="salad_Separator">
-                        <div class="separatorContent">
-                            <img src="./Assets/img/Salat_menu.png" alt="Salad Menu Icon">
-                            <span>Salad</span> 
-                        </div>   
-                        
-                    </div>
-                    <div id="saladList"></div>
-                </section>
+        <div class="descriptionHero">
+          <span
+            >The best of Burgers, Pizza, and Greens, all in one great
+            place.</span
+          >
+        </div>
+      </div>
+
+      <div id="productContainer">
+        <div class="productList">
+          <section id="burgerMenu">
+            <div class="burger_Separator">
+              <div class="separatorContent">
+                <img
+                  src="./Assets/img/Burger_menu.png"
+                  alt="Burger Menu Icon"
+                />
+                <span>Burger & Sandwiches</span>
+              </div>
             </div>
 
-            <div id="basket"></div>
+            <div id="burgerList">
+              <div class="templateDishes">
+                <img
+                  src="./Assets/img/Burger_1.png"
+                  alt="Veggie mushroom black burger"
+                  class="dishImage"
+                />
+                <div class="dishInfo">
+                  <div class="dishDescription">
+                    <h2>Veggie mushroom black burger</h2>
+                    <span>Mixed green salad, Tomatoes, Edamame, Mushrooms, Mixed green salad, Tomatoes</span>
+                  </div>
+                  <div class="priceButton">
+                    <span class="price">16.90€</span>
+                    <button class="animated-button">
+                      <span>Add to basket</span>
+                      <span></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="pizzaMenu">
+            <div class="pizza_Separator">
+              <div class="separatorContent">
+                <img src="./Assets/img/Pizza_menu.png" alt="Pizza Menu Icon" />
+                <div></div>
+                <span>Pizza (30cm)</span>
+              </div>
+            </div>
+            <div id="pizzaList"></div>
+          </section>
+          <section id="saladMenu">
+            <div class="salad_Separator">
+              <div class="separatorContent">
+                <img src="./Assets/img/Salat_menu.png" alt="Salad Menu Icon" />
+                <span>Salad</span>
+              </div>
+            </div>
+            <div id="saladList"></div>
+          </section>
         </div>
+
+        <div id="basket"></div>
+      </div>
     </main>
 
-<!-- FOOTER ------------------------------------------------------------------------------------->
+    <!-- FOOTER ------------------------------------------------------------------------------------->
 
     <footer>
-        <div class="container" id="footerContent">
-            <div class="copyright">   
-                <span class="material-symbols-rounded">copyright</span>
-                <span>2025 BurgerHouse</span>
-            </div>
-            <span>Imprint</span>
-            <span>Cookie Preferences</span>
+      <div class="container" id="footerContent">
+        <div class="copyright">
+          <span class="material-symbols-rounded">copyright</span>
+          <span>2025 BurgerHouse</span>
         </div>
+        <span>Imprint</span>
+        <span>Cookie Preferences</span>
+      </div>
     </footer>
 
     <!-- <span class="material-symbols-rounded">takeout_dining_2</span>
@@ -118,7 +152,5 @@
     <span class="material-symbols-rounded">shopping_cart</span>
     <span class="material-symbols-rounded">person</span>
     <span class="material-symbols-rounded">delete</span> -->
-    
-
-</body>
+  </body>
 </html>

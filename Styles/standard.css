@@ -38,7 +38,7 @@
   --text-color-creamyorange: #fdeadc;
 
   /* Breite des Inhaltes */
-  --section-width: 1400px;
+  --section-width: 1440px;
 }
 
 *,
@@ -66,10 +66,10 @@ header {
 
 main {
   display: flex;
-  flex: 1;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
+  position: relative;
 }
 
 /* FOOTER ---------------------------------------------*/
@@ -81,4 +81,33 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Scrollbar----------------------------------------- */
+
+body {
+  --sb-track-color: #fdeadc;
+  --sb-thumb-color: #e76c1f;
+  --sb-size: 14px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+  border: 1px solid #ffffff;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
 }

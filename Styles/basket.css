@@ -1,1 +1,23 @@
 /* CSS für warenkorb */
+
+#basketSidebar {
+  margin-top: 100px;
+  
+}
+
+#basket {
+  position: sticky;
+  top: 84px;
+  left: 0;
+  z-index: 20;
+  height: 400px;
+  width: 280px;
+  background: #000000;
+  border-radius: 20px 0 0 20px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -25,6 +25,7 @@
 
 .hero_section {
   width: 100%;
+  height: 100vh;
   align-items: center;
 }
 
@@ -105,7 +106,6 @@
 /* CONTENT WRAPPER */
 .contentWrapper{
   display: flex;
-  max-width: var(--section-width);
   width: 100%;
 }
 
@@ -134,12 +134,14 @@
 #pizzaList,
 #saladList {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 30px;
+  flex-wrap: wrap; 
+  justify-content: flex-start; 
+  gap: 30px; 
+  max-width: var(--section-width);
 
   /* ZENTRIERUNG: */
-  margin-top: 50px;
+  margin-top: 50px; 
+  margin: auto;
 
   padding: 0 20px;
   box-sizing: border-box;
@@ -148,17 +150,16 @@
 div[class*="_Separator"] {
   position: sticky;
   top: 0;
-  z-index: 10;
+  width: 100vw;
+  max-width: 100%;
+  right: 50%;
+  margin-bottom: 60px;
+
   height: 60px;
   background-color: var(--primary-color);
+  z-index: 10;
   display: flex;
   justify-content: center;
-  align-items: center;
-
-  /* Hier passiert die Magie: */
-  width: 100vw; 
-  margin-left: calc(-50vw + 50%); /* Schiebt das Element exakt an den linken Rand */
-  left: 0;
 }
 
 div[class*="_Separator"] span {

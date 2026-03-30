@@ -1,8 +1,29 @@
 /* CSS für warenkorb */
 
+.basketWrapper {
+  position: absolute;
+  top: 100vh;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 220px;
+}
+
+.wrapperBasket {
+  max-width: var(--section-width);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 100svh;
+}
+
 #basketSidebar {
-  margin-top: 100px;
-  
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 #basket {
@@ -14,10 +35,4 @@
   width: 280px;
   background: #000000;
   border-radius: 20px 0 0 20px;
-}
-
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

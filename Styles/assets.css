@@ -7,7 +7,7 @@
   display: inline-block;
   padding: 0;
   border: none;
-  font-size: 16px;
+  font-size: var(--font-span-little);
   background-color: inherit;
   border-radius: 100px;
   font-weight: 600;
@@ -38,7 +38,7 @@
 }
 
 .animated-button:hover {
-  box-shadow: 0 0 0 5px #f3212160;
+  box-shadow: 0px 0px 12px 5px var(--primary-color);
   color: #ffffff;
 }
 
@@ -50,4 +50,16 @@
   width: 150px;
   height: 150px;
   opacity: 1;
+}
+
+#buyButton {
+  background-color: var(--primary-color);
+  color: white;
+  width: 200px;
+  height: 40px;
+  font-size: var(--font-span-big);
+}
+
+#buyButton:hover {
+  box-shadow: 0px 0px 12px 5px var(--primary-color);
 }

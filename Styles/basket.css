@@ -2,7 +2,7 @@
 
 .basketWrapper {
   position: absolute;
-  top: 100vh;
+  top: 90vh;
   bottom: 0;
   width: 100%;
   display: flex;
@@ -20,7 +20,7 @@
 }
 
 #basketSidebar {
-  width: 300px;
+  width: 400px;
   height: 100%;
   display: flex;
   justify-content: flex-end;
@@ -28,11 +28,35 @@
 
 #basket {
   position: sticky;
-  top: 84px;
+  top: 0px;
   left: 0;
   z-index: 20;
-  height: 400px;
-  width: 280px;
-  background: #000000;
-  border-radius: 20px 0 0 20px;
+  height: 700px;
+  width: 400px;
+  padding: 24px 24px 24px 24px;
+  background-color: var(--spacegray-color);
+  border-radius: 20px 20px 20px 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Basket Content----------------------------- */
+
+#basket h2 {
+  color: var(--text-color-creamyorange);
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.basketDishes {
+  background: none;
+  height: 360px;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 5px;
+  border-radius: 20px;
 }

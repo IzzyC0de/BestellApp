@@ -114,6 +114,7 @@
 #productContainer {
   width: calc(100% - 308px);
   flex: 1;
+  z-index: 20;
 }
 
 #burgerMenu,

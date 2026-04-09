@@ -1,6 +1,7 @@
 // Hier kommt der HTML Template rein
 
 function getDishTemplate(indexDishes) {
+  let priceFormated = myDishes[indexDishes].price;
   return `
 
   <div class="templateDishes">
@@ -17,7 +18,7 @@ function getDishTemplate(indexDishes) {
         </span>
       </div>
       <div class="priceButton">
-        <span class="price">16.90€</span>
+        <span class="price">${myDishes[indexDishes].price.toFixed(2)}</span>
         <button class="animated-button" onclick="addToBasket(${indexDishes})">
           <span>Add to basket</span>
           <span></span>
@@ -27,18 +28,19 @@ function getDishTemplate(indexDishes) {
   </div>`;
 }
 
-function getBasketTemplate(indexDishes) {
+function getBasketTemplate(myBasket, indexBasket) {
+  let subPrice = myBasket.price * myBasket.amount;
   return `
   
       <div class="basketItem">
-        <span>${myDishes[indexDishes].name}</span>
-        <div>
+        <h3>${myBasket.name}</h3>
+        <div class="basketAmountPrice">
           <div class="amountDishes">
-            <span class="material-symbols-rounded">delete</span>
-            <span class="amountNumber">1</span>
-            <span class="material-symbols-rounded">+</span>
+            <button class="material-symbols-rounded" onclick="deleteFromBasket(${indexBasket})" id="basketDeleteButton">delete</button>
+            <span class="amountNumber">${myBasket.amount}</span>
+            <button class="material-symbols-rounded" onclick="amountPlusBasket(${indexBasket})" id="basketPlusButton">add</button>
           </div>
-          <span>${myDishes[indexDishes].price}€</span>
+          <span class="basketPrice">${subPrice.toFixed(2)}€</span>
         </div>
       </div>
   

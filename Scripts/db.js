@@ -1,8 +1,12 @@
 // Hier kommt der array rein
+
+let basket = [];
+
+
 let myDishes = [
   {
     name: "Veggie mushroom black burger",
-    price: 16.9,
+    price: 16.90,
     description: "Mixed green salad, Tomatoes, Edamame, Mushrooms",
     id: 1,
     category: "Burger",
@@ -10,7 +14,7 @@ let myDishes = [
   },
   {
     name: "All meat burger",
-    price: 15.9,
+    price: 15.90,
     description: "Beef, Bacon, Dill pickles, Smoked cheese, Ketchup, BBQ souse",
     id: 2,
     category: "Burger",
@@ -18,7 +22,7 @@ let myDishes = [
   },
   {
     name: "Beef red burger",
-    price: 14.9,
+    price: 14.90,
     description: "Beef, Cheese, Tomatoes, Lettuce, Onion",
     id: 3,
     category: "Burger",
@@ -26,7 +30,7 @@ let myDishes = [
   },
   {
     name: "BIg chicken burger",
-    price: 15.9,
+    price: 15.90,
     description: "Chicken, Cheese, Tomatoes, Lettuce, Onion, Bell pepper",
     id: 4,
     category: "Burger",
@@ -34,7 +38,7 @@ let myDishes = [
   },
   {
     name: "Pizza Margherita",
-    price: 11.9,
+    price: 11.90,
     description: "Tomato Sauce, Mozzarella",
     id: 5,
     category: "Pizza",
@@ -42,7 +46,7 @@ let myDishes = [
   },
   {
     name: "Pizza Chorizo",
-    price: 13.9,
+    price: 13.90,
     description: "Tomato slices, Mozzarella, Chorizo",
     id: 6,
     category: "Pizza",
@@ -50,7 +54,7 @@ let myDishes = [
   },
   {
     name: "Funghi",
-    price: 12.9,
+    price: 12.90,
     description: "Red onion, Olives, Button Mushrooms, Mozzarella",
     id: 7,
     category: "Pizza",
@@ -58,7 +62,7 @@ let myDishes = [
   },
   {
     name: "Quattro Formaggi with Chicken ",
-    price: 15.9,
+    price: 15.90,
     description:
       "Chicken, Mozzarella, Gorgonzola, Fontina,  Parmigiano Reggiano",
     id: 8,
@@ -67,7 +71,7 @@ let myDishes = [
   },
   {
     name: "Warm beef arugula salad",
-    price: 16.9,
+    price: 16.90,
     description:
       "Beef, Arugula, Field salad, Greek feta, Cherry tomatoes, Sun-dried Tomatoes, Balsamic-vinegar dressing",
     id: 9,
@@ -76,7 +80,7 @@ let myDishes = [
   },
   {
     name: "Mini green Salad",
-    price: 7.9,
+    price: 7.90,
     description: "Green salad, Cucumber, Carrots, Parsley, Radishes ",
     id: 10,
     category: "Salad",
@@ -84,7 +88,7 @@ let myDishes = [
   },
   {
     name: "Green Salad with sea food",
-    price: 16.9,
+    price: 16.90,
     description:
       "Mixed greens, Cherry tomatoes, Red onion, Mussels, Squid rings, Shrimp, Dijon mustard-lemon dressing with dill",
     id: 11,
@@ -93,7 +97,7 @@ let myDishes = [
   },
   {
     name: "Vegan green salad with tofu",
-    price: 14.9,
+    price: 14.90,
     description:
       "Green salad, Cherry tomatoes, Cucumber, Baby spinach, Edamame, Radishes, Bittercress, Tofu, Peanuts",
     id: 12,
@@ -101,3 +105,6 @@ let myDishes = [
     image: "./Assets/img/Salad_12.png",
   },
 ];
+
+
+

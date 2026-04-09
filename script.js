@@ -24,12 +24,47 @@ function renderDishes() {
   }
 }
 
-function addToBasket(indexDishes) {
+function renderBasket() {
   let basketRef = document.getElementById("basketDishes");
+  basketRef.innerHTML = "";
 
-  let allDishes = document.getElementsByClassName("templateDishes")
+  for (let indexBasket = 0; indexBasket < basket.length; indexBasket++) {
+    const myBasket = basket[indexBasket];
+    basketRef.innerHTML += getBasketTemplate(myBasket, indexBasket);
+  }
+}
 
-  let elementToAdd = allDishes[indexDishes];
+function addToBasket(indexDishes) {
+  let dish = myDishes[indexDishes];
 
-  basketRef.innerHTML += getBasketTemplate(indexDishes);
+  let existingItem = basket.find((item) => item.name === dish.name);
+
+  if (existingItem) {
+    existingItem.amount++;
+  } else {
+    basket.push({
+      name: dish.name,
+      price: dish.price,
+      amount: 1,
+    });
+  }
+
+  renderBasket();
+}
+
+function deleteFromBasket(indexBasket) {
+  if (basket[indexBasket].amount > 1) {
+    basket[indexBasket].amount--;
+  } else {
+    basket.splice(indexBasket, 1);
+  }
+  renderBasket();
+}
+
+function amountPlusBasket(indexBasket) {
+  if (basket[indexBasket].amount < 100) {
+    basket[indexBasket].amount++;
+    basket[indexBasket].price * basket[indexBasket].amount;
+  }
+  renderBasket();
 }

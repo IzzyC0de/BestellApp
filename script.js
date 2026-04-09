@@ -86,7 +86,12 @@ function basketCalculator(indexBasket) {
     subtotal += basket[i].price * basket[i].amount;
   }
 
-  let deliveryFee = 4.9;
+  let deliveryFee;
+  if(subtotal > 0){
+    deliveryFee = 4.90;
+  }else{
+    deliveryFee = 0;
+  }
   let total = subtotal + deliveryFee;
 
   document.getElementById("subtotal").innerHTML = `${subtotal.toFixed(2)} €`;

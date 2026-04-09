@@ -2,7 +2,7 @@
 
 .basketWrapper {
   position: absolute;
-  top: 90vh;
+  top: 92.8vh;
   bottom: 0;
   width: 100%;
   display: flex;
@@ -31,7 +31,7 @@
   top: 0px;
   left: 0;
   z-index: 20;
-  height: 700px;
+  height: 740px;
   width: 400px;
   padding: 24px 24px 24px 24px;
   background-color: var(--spacegray-color);
@@ -45,7 +45,7 @@
 
 #basket h2 {
   color: var(--text-color-creamyorange);
-  margin-top: 40px;
+  margin-top: 10px;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
@@ -119,4 +119,40 @@
 .basketPrice {
   font-size: var(--font-span-big);
   font-weight: 700;
+}
+
+
+/* BasketPrce and Calc-------------------------------- */
+
+#priceCalc{
+  margin-top: 20px;
+}
+
+.basketCalcTable{
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  color: white;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.basketCalcTable td{
+  padding-bottom: 10px;
+}
+
+.basketCalcTable td:last-child{
+  text-align: end;
+  padding-top: 0px;
+}
+
+.basketCalcTable tr:last-child{
+  border-top:  2px solid white;
+  
+}
+
+.basketCalcTable tr:last-child td {
+  padding-top: 20px;    
+  font-size: var(--font-span-big);
+  font-weight: 700;     
 }

@@ -1,5 +1,12 @@
 /* Hier kommen Buttons usw. rein */
 
+
+.basketBuyButton{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .animated-button {
   width: 120px;
   height: 30px;

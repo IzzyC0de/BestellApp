@@ -147,11 +147,28 @@
               <div id="basket">
                 <h2>Your Basket</h2>
                 <div id="basketDishes"></div>
-                <div id="priceCalc"></div>
-                <button class="animated-button" id="buyButton">
-                  <span>Add to basket</span>
-                  <span></span>
-                </button>
+                <div id="priceCalc">
+                  <table class="basketCalcTable">
+                    <tr>
+                      <td>Subtotal</td>
+                      <td id="subtotal">0 €</td>
+                    </tr>
+                    <tr>
+                      <td>Delivery fee</td>
+                      <td id="delivery-fee">0 €</td>
+                    </tr>
+                    <tr>
+                      <td>Total</td>
+                      <td id="total-price">0 €</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="basketBuyButton">
+                  <button class="animated-button" id="buyButton">
+                    <span>Add to basket</span>
+                    <span></span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>

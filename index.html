@@ -164,7 +164,7 @@
                   </table>
                 </div>
                 <div class="basketBuyButton">
-                  <button class="animated-button" id="buyButton">
+                  <button class="animated-button" id="buyButton" onclick="showDialog()">
                     <span>Add to basket</span>
                     <span></span>
                   </button>
@@ -176,6 +176,13 @@
       </div>
     </main>
 
+    <dialog id="myDialog">
+       <div class="dialogContent">
+        <span id="truckIcon" class="material-symbols-rounded">delivery_truck_speed</span>
+        <span class="h2_Dialog">Order Confirmed</span>
+        <span class="h2_Descr">Your food is on the way!</span>
+      </div> 
+    </dialog>
     <!-- FOOTER ------------------------------------------------------------------------------------->
 
     <footer>

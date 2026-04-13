@@ -104,7 +104,7 @@
   font-size: var(--font-h4);
 }
 /* CONTENT WRAPPER */
-.contentWrapper{
+.contentWrapper {
   display: flex;
   width: 100%;
 }
@@ -127,7 +127,7 @@
   justify-content: center;
 }
 
-#saladMenu{
+#saladMenu {
   margin-bottom: 80px;
 }
 
@@ -135,13 +135,13 @@
 #pizzaList,
 #saladList {
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: flex-start; 
-  gap: 30px; 
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 30px;
   max-width: var(--section-width);
 
   /* ZENTRIERUNG: */
-  margin-top: 50px; 
+  margin-top: 50px;
   margin: auto;
 
   padding: 0 20px;
@@ -199,7 +199,7 @@ div[class*="_Separator"] span {
   padding: 10px;
 }
 
-.dishInfo{
+.dishInfo {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -207,13 +207,12 @@ div[class*="_Separator"] span {
   margin-left: 16px;
 }
 
-.dishDescription{
+.dishDescription {
   display: flex;
   flex-direction: column;
-  
 }
 
-.priceButton{
+.priceButton {
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -221,11 +220,54 @@ div[class*="_Separator"] span {
   margin-left: 20px;
 }
 
-.price{
+.price {
   font-size: var(--font-h4);
   font-weight: 600;
-} */
+}
 
+/* DIALOG--------------------------------------- */
+
+#myDialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 220px;
+  width: 360px;
+  padding: 5px;
+
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: var(--spacegray-color);
+  color: white;
+}
+
+.dialogContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#myDialog::backdrop {
+  background: #e86c1e91;
+}
+
+#truckIcon {
+  color: var(--primary-color);
+  font-size: 70px;
+}
+
+.h2_Dialog {
+  font-size: var(--font-h2);
+  font-weight: 700;
+}
+
+.h2_Descr {
+  font-size: var(--font-h4);
+}
 /* FOOTER ---------------------------------------*/
 
 #footerContent {

@@ -6,8 +6,7 @@
   max-width: var(--section-width);
   width: 100%;
   justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 40px 0 40px;
 }
 
 .logo_header {
@@ -141,10 +140,9 @@
   max-width: var(--section-width);
 
   /* ZENTRIERUNG: */
-  margin-top: 50px;
   margin: auto;
 
-  padding: 0 20px;
+  padding: 0 40px;
   box-sizing: border-box;
 }
 
@@ -231,7 +229,7 @@ div[class*="_Separator"] span {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -60%) scale(0.9);
 
   height: 220px;
   width: 360px;
@@ -241,6 +239,19 @@ div[class*="_Separator"] span {
   border-radius: 20px;
   background-color: var(--spacegray-color);
   color: white;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: 
+    opacity 0.3s ease-in-out,
+    transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+#myDialog.active {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  pointer-events: all;
 }
 
 .dialogContent {

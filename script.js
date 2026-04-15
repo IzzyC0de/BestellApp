@@ -96,8 +96,10 @@ function showDialog() {
 
   let Dialog = document.getElementById("myDialog");
   Dialog.showModal();
+  Dialog.classList.add("active")
   setTimeout(() =>{
     Dialog.close();
+    Dialog.classList.remove("active")
   }, 4000);
   
   basket.length = 0;

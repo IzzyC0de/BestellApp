@@ -66,12 +66,11 @@ function deleteFromBasket(indexBasket) {
 function amountPlusBasket(indexBasket) {
   if (basket[indexBasket].amount < 100) {
     basket[indexBasket].amount++;
-    basket[indexBasket].price * basket[indexBasket].amount;
   }
   renderBasket();
 }
 
-function basketCalculator(indexBasket) {
+function basketCalculator() {
   let subtotal = 0;
   for (let i = 0; i < basket.length; i++) {
     subtotal += basket[i].price * basket[i].amount;

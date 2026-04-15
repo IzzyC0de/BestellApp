@@ -1,5 +1,7 @@
 # BestellApp Development Guide
 
+**🇩🇪 Language: Always respond in German (Deutsch)**
+
 ## Project Overview
 
 BestellApp is a food ordering web application for a restaurant (BurgerHouse) built with vanilla HTML, CSS, and JavaScript. It showcases a menu of burgers, pizzas, and salads with an interactive basket/cart system.

@@ -46,3 +46,4 @@ function getBasketTemplate(myBasket, indexBasket) {
   
   `;
 }
+

@@ -100,7 +100,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--font-h4);
+  font-size: var(--font-h3);
 }
 /* CONTENT WRAPPER */
 .contentWrapper {
@@ -177,6 +177,15 @@ div[class*="_Separator"] span {
   gap: 20px;
 }
 
+.dishDescription h2{
+  font-size: var(--font-h3);
+  margin-bottom: 4px;
+}
+
+.dishDescription span{
+  font-size: var(--font-span-small);
+}
+
 .separatorContent {
   width: 100%;
   max-width: 1440px;
@@ -219,7 +228,7 @@ div[class*="_Separator"] span {
 }
 
 .price {
-  font-size: var(--font-h4);
+  font-size: var(--font-h3);
   font-weight: 600;
 }
 
@@ -243,7 +252,7 @@ div[class*="_Separator"] span {
   opacity: 0;
   pointer-events: none;
 
-  transition: 
+  transition:
     opacity 0.3s ease-in-out,
     transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
@@ -277,7 +286,7 @@ div[class*="_Separator"] span {
 }
 
 .h2_Descr {
-  font-size: var(--font-h4);
+  font-size: var(--font-h3);
 }
 /* FOOTER ---------------------------------------*/
 
@@ -289,4 +298,24 @@ div[class*="_Separator"] span {
   font-size: var(--font-span-big);
   font-weight: 400;
   color: white;
+}
+
+/* RESPONSIVE ------------------------------------- */
+
+@media (max-width: 1244px) {
+
+  #burgerList,
+  #pizzaList,
+  #saladList {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .templateDishes{
+    width: 640px;
+  }
+
+  .dishInfo{
+    height: stretch;
+  }
 }

@@ -124,6 +124,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  min-width: 0;
 }
 
 #saladMenu {
@@ -171,10 +173,6 @@ div[class*="_Separator"] span {
 
 .productList {
   width: 100%;
-  min-width: var(--section-width);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
 }
 
 .dishDescription h2{
@@ -197,7 +195,7 @@ div[class*="_Separator"] span {
 /* Gerichte */
 
 .templateDishes {
-  width: 750px;
+  width: min(100%, 750px);
   background-color: var(--secondary-color);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
@@ -278,6 +276,7 @@ div[class*="_Separator"] span {
 #truckIcon {
   color: var(--primary-color);
   font-size: 70px;
+  margin-bottom: 40px;
 }
 
 .h2_Dialog {
@@ -312,10 +311,33 @@ div[class*="_Separator"] span {
   }
 
   .templateDishes{
-    width: 640px;
+    width: 100%;
   }
 
   .dishInfo{
     height: stretch;
   }
 }
+
+@media (max-width: 700px) {
+  #burgerList,
+  #pizzaList,
+  #saladList {
+    padding: 0 16px;
+  }
+
+  .templateDishes {
+    width: 100%;
+  }
+
+  .dishInfo {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .priceButton {
+    align-items: flex-start;
+    margin-left: 0;
+  }
+}
+

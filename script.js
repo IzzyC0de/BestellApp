@@ -91,6 +91,9 @@ function basketCalculator() {
 }
 
 function showDialog() {
+
+  if (basket.length === 0) return;
+
   let basketRef = document.getElementById("basketDishes");
 
   let Dialog = document.getElementById("myDialog");

@@ -82,7 +82,7 @@
 }
 
 .amountDishes {
-  font-size: var(--font-span-little);
+  font-size: var(--font-span-small);
   gap: 10px;
   justify-content: center;
   align-items: center;

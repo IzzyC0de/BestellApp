@@ -14,7 +14,7 @@
   display: inline-block;
   padding: 0;
   border: none;
-  font-size: var(--font-span-little);
+  font-size: var(--font-span-small);
   background-color: inherit;
   border-radius: 100px;
   font-weight: 600;

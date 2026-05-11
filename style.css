@@ -169,7 +169,7 @@ div[class*="_Separator"] span {
   margin-left: 30px;
 }
 
-.productlist {
+.productList {
   width: 100%;
   min-width: var(--section-width);
   display: flex;

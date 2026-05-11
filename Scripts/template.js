@@ -36,9 +36,9 @@ function getBasketTemplate(myBasket, indexBasket) {
         <h3>${myBasket.name}</h3>
         <div class="basketAmountPrice">
           <div class="amountDishes">
-            <button class="material-symbols-rounded" onclick="deleteFromBasket(${indexBasket})" id="basketDeleteButton">delete</button>
+            <button class="material-symbols-rounded" onclick="deleteFromBasket(${indexBasket})">delete</button>
             <span class="amountNumber">${myBasket.amount}</span>
-            <button class="material-symbols-rounded" onclick="amountPlusBasket(${indexBasket})" id="basketPlusButton">add</button>
+            <button class="material-symbols-rounded" onclick="amountPlusBasket(${indexBasket})">add</button>
           </div>
           <span class="basketPrice">${subPrice.toFixed(2)}€</span>
         </div>

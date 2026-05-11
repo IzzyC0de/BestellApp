@@ -3,7 +3,8 @@
   font-family: "Material Symbols Rounded";
   font-weight: normal;
   font-style: normal;
-  font-size: 24px; /* Standardgröße */
+  font-size: 20px;
+  height: 20px; /* Standardgröße */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -11,7 +12,9 @@
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  background: none;
   /* Sorgt für scharfe Icons im Browser */
   -webkit-font-smoothing: antialiased;
 }

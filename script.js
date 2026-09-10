@@ -97,6 +97,7 @@ function showDialog() {
   let basketRef = document.getElementById("basketDishes");
 
   let Dialog = document.getElementById("myDialog");
+
   Dialog.showModal();
   Dialog.classList.add("active")
   setTimeout(() =>{

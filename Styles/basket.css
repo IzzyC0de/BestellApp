@@ -9,6 +9,7 @@
   justify-content: center;
   margin-top: 206px;
   padding: 0 40px 0 40px;
+  transition: all 0.45s ease;
 }
 
 .wrapperBasket {
@@ -37,7 +38,6 @@
   padding: 24px 24px 24px 24px;
   background-color: var(--spacegray-color);
   border-radius: 20px 20px 20px 20px;
-
   display: flex;
   flex-direction: column;
 }
@@ -67,7 +67,7 @@
 
 .basketItem {
   width: 100%;
-  height: 86px;
+  height: auto;
   background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
@@ -75,6 +75,7 @@
   padding: 10px;
   border-radius: 15px;
   margin-bottom: 10px;
+  gap: 12px;
 }
 
 .basketItem h3 {
@@ -106,14 +107,13 @@
   font-weight: 700;
 }
 
-
 /* BasketPrce and Calc-------------------------------- */
 
-#priceCalc{
+#priceCalc {
   margin-top: 20px;
 }
 
-.basketCalcTable{
+.basketCalcTable {
   width: 100%;
   table-layout: fixed;
   border-collapse: collapse;
@@ -122,22 +122,21 @@
   margin-top: 20px;
 }
 
-.basketCalcTable td{
+.basketCalcTable td {
   padding-bottom: 10px;
 }
 
-.basketCalcTable td:last-child{
+.basketCalcTable td:last-child {
   text-align: end;
   padding-top: 0px;
 }
 
-.basketCalcTable tr:last-child{
-  border-top:  2px solid white;
-  
+.basketCalcTable tr:last-child {
+  border-top: 2px solid white;
 }
 
 .basketCalcTable tr:last-child td {
-  padding-top: 20px;    
+  padding-top: 20px;
   font-size: var(--font-span-big);
-  font-weight: 700;     
+  font-weight: 700;
 }

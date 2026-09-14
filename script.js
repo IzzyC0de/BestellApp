@@ -109,3 +109,18 @@ function showDialog() {
   renderBasket();
   basketRef.innerHTML = "";
 }
+
+function toggleBasket() {
+  const basket = document.getElementById("basket");
+  const basketIcon = document.getElementById("basketIcon");
+
+  if (window.innerWidth <= 770) {
+    basket.classList.toggle("active");
+
+    if (basket.classList.contains("active")) {
+      basketIcon.src = "./Assets/img/Basket_active.png";
+    } else {
+      basketIcon.src = "./Assets/img/Basket.png";
+    }
+  }
+}

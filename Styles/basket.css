@@ -40,6 +40,7 @@
   border-radius: 20px 20px 20px 20px;
   display: flex;
   flex-direction: column;
+  transition: transform 0.8s ease, opacity 0.8s ease;
 }
 
 /* Basket Content----------------------------- */

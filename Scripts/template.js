@@ -24,6 +24,8 @@ function getDishTemplate(indexDishes) {
           <span></span>
         </button>
       </div>
+
+      <span class="basketCountBadge" id="basketCount-${indexDishes}">0</span>
     </div>
   </div>`;
 }

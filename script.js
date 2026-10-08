@@ -124,3 +124,10 @@ function toggleBasket() {
     }
   }
 }
+
+function updateDishCount(indexDishes) {
+  const dish = myDishes[indexDishes];
+  const basketItem = basket.find((item) => item.name === dish.name);
+
+  
+}

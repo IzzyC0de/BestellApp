@@ -34,6 +34,12 @@ function renderBasket() {
   }
 
   basketCalculator();
+
+  for (let indexDishes = 0; indexDishes < myDishes.length; indexDishes++) {
+    updateDishCount(indexDishes);
+  }
+
+  updateNavCount();
 }
 
 function addToBasket(indexDishes) {
@@ -129,5 +135,16 @@ function updateDishCount(indexDishes) {
   const dish = myDishes[indexDishes];
   const basketItem = basket.find((item) => item.name === dish.name);
 
-  
+  const countRef = document.getElementById(`basketCount-${indexDishes}`);
+  countRef.innerHTML = basketItem ? basketItem.amount : 0;
+}
+
+function updateNavCount() {
+  let totalAmount = 0;
+
+  for (let i = 0; i < basket.length; i++) {
+    totalAmount = basket[i].amount;
+  }
+
+  document.getElementById("basketNavCount").innerHTML = totalAmount;
 }

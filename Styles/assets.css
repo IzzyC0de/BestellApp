@@ -26,6 +26,26 @@
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+.buttonWrapper {
+  position: relative;
+}
+
+.amountNumberDishes{
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0 0 2px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(30%, -60%);
+}
+
 .animated-button span:last-child {
   position: absolute;
   top: 50%;
@@ -73,4 +93,24 @@
 
 #buyButton:hover {
   box-shadow: 0px 0px 12px 5px var(--primary-color);
+}
+
+.navBasketCount{
+  position: relative;
+}
+
+.amountNavNumberDishes{
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0 0 2px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(60%, -40%);
 }

@@ -94,6 +94,7 @@
 
 #rating_star {
   font-size: 30px;
+  height: 30px;
 }
 
 .descriptionHero {
@@ -101,6 +102,7 @@
   align-items: center;
   justify-content: center;
   font-size: var(--font-h3);
+  padding: 0 20px 0 20px;
 }
 /* CONTENT WRAPPER */
 .contentWrapper {
@@ -144,7 +146,7 @@
   /* ZENTRIERUNG: */
   margin: auto;
 
-  padding: 0 40px;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
@@ -474,14 +476,16 @@ div[class*="_Separator"] span {
     right: 0;
     bottom: 0;
     width: 100%;
-    transform: translateY(110%);
     opacity: 0;
     transition: transform 0.8s ease, opacity 0.8s ease;
+    transform: translateY(100%);
+    pointer-events: none;
   }
 
   #basket.active {
     transform: translateY(0);
     opacity: 1;
+    pointer-events: auto;
   }
 
 .basketBuyButton{
@@ -543,4 +547,31 @@ div[class*="_Separator"] span {
   .descriptionHero span{
     font-size: var(--font-h3);
   }
+
+  #truckIcon {
+  color: var(--primary-color);
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.h2_Dialog {
+  font-size: var(--font-h3);
+  font-weight: 700;
+}
+
+.h2_Descr {
+  font-size: var(--font-h4);
+}
+
+}
+
+@media (max-width: 381px){
+
+.hero_content{
+  flex-direction: column;
+}
+
+  .rating{
+  margin: 0;
+}
 }

@@ -19,13 +19,16 @@ function getDishTemplate(indexDishes) {
       </div>
       <div class="priceButton">
         <span class="price">${myDishes[indexDishes].price.toFixed(2)}</span>
-        <button class="animated-button" onclick="addToBasket(${indexDishes})">
-          <span>Add to basket</span>
-          <span></span>
-        </button>
+        <div class="buttonWrapper">
+          <button class="animated-button" onclick="addToBasket(${indexDishes})">
+            <span>Add to basket</span>
+            <span></span>
+          </button>
+          <span class="amountNumberDishes" id="basketCount-${indexDishes}">0</span>
+        </div>  
       </div>
 
-      <span class="basketCountBadge" id="basketCount-${indexDishes}">0</span>
+      
     </div>
   </div>`;
 }
@@ -48,4 +51,3 @@ function getBasketTemplate(myBasket, indexBasket) {
   
   `;
 }
-

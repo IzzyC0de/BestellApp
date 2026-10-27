@@ -113,6 +113,8 @@ function showDialog() {
   
   basket.length = 0;
   renderBasket();
+  document.getElementById("basket").classList.remove("active");
+document.getElementById("basketIcon").src = "./assets/img/Basket.png";
   basketRef.innerHTML = "";
 }
 
@@ -143,7 +145,7 @@ function updateNavCount() {
   let totalAmount = 0;
 
   for (let i = 0; i < basket.length; i++) {
-    totalAmount = basket[i].amount;
+    totalAmount += basket[i].amount;
   }
 
   document.getElementById("basketNavCount").innerHTML = totalAmount;

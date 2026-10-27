@@ -124,9 +124,9 @@ function toggleBasket() {
     basket.classList.toggle("active");
 
     if (basket.classList.contains("active")) {
-      basketIcon.src = "./Assets/img/Basket_active.png";
+      basketIcon.src = "./assets/img/Basket_active.png";
     } else {
-      basketIcon.src = "./Assets/img/Basket.png";
+      basketIcon.src = "./assets/img/Basket.png";
     }
   }
 }

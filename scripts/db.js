@@ -10,7 +10,7 @@ let myDishes = [
     description: "Mixed green salad, Tomatoes, Edamame, Mushrooms",
     id: 1,
     category: "Burger",
-    image: "./Assets/img/Burger_1.png",
+    image: "./assets/img/Burger_1.png",
   },
   {
     name: "All meat burger",
@@ -18,7 +18,7 @@ let myDishes = [
     description: "Beef, Bacon, Dill pickles, Smoked cheese, Ketchup, BBQ souse",
     id: 2,
     category: "Burger",
-    image: "./Assets/img/Burger_2.png",
+    image: "./assets/img/Burger_2.png",
   },
   {
     name: "Beef red burger",
@@ -26,7 +26,7 @@ let myDishes = [
     description: "Beef, Cheese, Tomatoes, Lettuce, Onion",
     id: 3,
     category: "Burger",
-    image: "./Assets/img/Burger_3.png",
+    image: "./assets/img/Burger_3.png",
   },
   {
     name: "Big chicken burger",
@@ -34,7 +34,7 @@ let myDishes = [
     description: "Chicken, Cheese, Tomatoes, Lettuce, Onion, Bell pepper",
     id: 4,
     category: "Burger",
-    image: "./Assets/img/Burger_4.png",
+    image: "./assets/img/Burger_4.png",
   },
   {
     name: "Pizza Margherita",
@@ -42,7 +42,7 @@ let myDishes = [
     description: "Tomato Sauce, Mozzarella",
     id: 5,
     category: "Pizza",
-    image: "./Assets/img/Pizza_5.png",
+    image: "./assets/img/Pizza_5.png",
   },
   {
     name: "Pizza Chorizo",
@@ -50,7 +50,7 @@ let myDishes = [
     description: "Tomato slices, Mozzarella, Chorizo",
     id: 6,
     category: "Pizza",
-    image: "./Assets/img/Pizza_6.png",
+    image: "./assets/img/Pizza_6.png",
   },
   {
     name: "Funghi",
@@ -58,7 +58,7 @@ let myDishes = [
     description: "Red onion, Olives, Button Mushrooms, Mozzarella",
     id: 7,
     category: "Pizza",
-    image: "./Assets/img/Pizza_7.png",
+    image: "./assets/img/Pizza_7.png",
   },
   {
     name: "Quattro Formaggi with Chicken ",
@@ -67,7 +67,7 @@ let myDishes = [
       "Chicken, Mozzarella, Gorgonzola, Fontina,  Parmigiano Reggiano",
     id: 8,
     category: "Pizza",
-    image: "./Assets/img/Pizza_8.png",
+    image: "./assets/img/Pizza_8.png",
   },
   {
     name: "Warm beef arugula salad",
@@ -76,7 +76,7 @@ let myDishes = [
       "Beef, Arugula, Field salad, Greek feta, Cherry tomatoes, Sun-dried Tomatoes, Balsamic-vinegar dressing",
     id: 9,
     category: "Salad",
-    image: "./Assets/img/Salad_9.png",
+    image: "./assets/img/Salad_9.png",
   },
   {
     name: "Mini green Salad",
@@ -84,7 +84,7 @@ let myDishes = [
     description: "Green salad, Cucumber, Carrots, Parsley, Radishes ",
     id: 10,
     category: "Salad",
-    image: "./Assets/img/Salad_10.png",
+    image: "./assets/img/Salad_10.png",
   },
   {
     name: "Green Salad with sea food",
@@ -93,7 +93,7 @@ let myDishes = [
       "Mixed greens, Cherry tomatoes, Red onion, Mussels, Squid rings, Shrimp, Dijon mustard-lemon dressing with dill",
     id: 11,
     category: "Salad",
-    image: "./Assets/img/Salad_11.png",
+    image: "./assets/img/Salad_11.png",
   },
   {
     name: "Vegan green salad with tofu",
@@ -102,7 +102,7 @@ let myDishes = [
       "Green salad, Cherry tomatoes, Cucumber, Baby spinach, Edamame, Radishes, Bittercress, Tofu, Peanuts",
     id: 12,
     category: "Salad",
-    image: "./Assets/img/Salad_12.png",
+    image: "./assets/img/Salad_12.png",
   },
 ];
 

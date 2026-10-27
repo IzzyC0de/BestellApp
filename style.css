@@ -6,7 +6,7 @@
   max-width: var(--section-width);
   width: 100%;
   justify-content: space-between;
-  padding: 0 40px 0 40px;
+  padding: 0 40px 0 40p;
 }
 
 .logo_header {

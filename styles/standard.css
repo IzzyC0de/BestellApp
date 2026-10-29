@@ -31,15 +31,14 @@
   --main-font: "Palanquin", sans-serif;
   --bold-font: "Palanquin Dark", sans-serif;
 
-  --font-h1: 68px;
+  --font-h1: 48px;
   --font-h2: 40px;
   --font-h3: 24px;
-  --font-h4: 18px;
+  --font-h4: 20px;
+  --font-h5: 18px;
   --font-span-small: 16px;
-  --font-span-big: 18px;
+  --font-span-big:18px;
 
-  --text-color-dark: #363534;
-  --text-color-light: #ffffff;
   --text-color-creamyorange: #fdeadc;
 
   /* Breite des Inhaltes */

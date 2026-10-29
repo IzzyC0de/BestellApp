@@ -2,7 +2,7 @@
 
 .basketWrapper {
   position: absolute;
-  top: 92.8vh;
+  top: 67vh;
   bottom: 0;
   width: 100%;
   display: flex;
@@ -92,7 +92,6 @@
 }
 
 .amountNumber {
-  vertical-align: middle;
   line-height: 20px;
 }
 

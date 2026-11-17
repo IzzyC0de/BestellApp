@@ -24,7 +24,7 @@
   /* Colors */
   --primary-color: #e76c1f;
   --secondary-color: #fdeadc;
-  --highlights-color: #FACAAC;
+  --highlights-color: #facaac;
   --spacegray-color: #363534;
   --white-color: #ffffff;
 
@@ -38,7 +38,7 @@
   --font-h4: 20px;
   --font-h5: 18px;
   --font-span-small: 16px;
-  --font-span-big:18px;
+  --font-span-big: 18px;
 
   --text-color-creamyorange: #fdeadc;
 
@@ -117,5 +117,3 @@ body::-webkit-scrollbar-thumb {
     scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
   }
 }
-
-

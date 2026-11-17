@@ -104,7 +104,7 @@
               </div>
               <div id="pizzaList"></div>
             </section>
-            
+
             <section id="saladMenu">
               <div class="salad_Separator">
                 <div class="separatorContent">
@@ -143,7 +143,11 @@
                   </table>
                 </div>
                 <div class="basketBuyButton">
-                  <button class="animated-button" id="buyButton" onclick="showDialog()">
+                  <button
+                    class="animated-button"
+                    id="buyButton"
+                    onclick="showDialog()"
+                  >
                     <span id="buynow_btn">Buy now</span>
                     <span></span>
                   </button>
@@ -156,11 +160,13 @@
     </main>
 
     <dialog id="myDialog">
-       <div class="dialogContent">
-        <span id="truckIcon" class="material-symbols-rounded">delivery_truck_speed</span>
+      <div class="dialogContent">
+        <span id="truckIcon" class="material-symbols-rounded"
+          >delivery_truck_speed</span
+        >
         <span class="h2_Dialog">Order Confirmed</span>
         <span class="h2_Descr">Your food is on the way!</span>
-      </div> 
+      </div>
     </dialog>
     <!-- FOOTER ------------------------------------------------------------------------------------->
 
@@ -176,11 +182,24 @@
     </footer>
 
     <nav class="responsive_nav">
-      <button class="nav_symbols"><img src="./assets/img/Home.png" alt="Home Button"></button>
-      <button class="nav_symbols"><img src="./assets/img/Account.png" alt="Account Button"></button>
-      <button class="nav_symbols"><img src="./assets/img/Orders.png" alt="Orders Button"></button>
+      <button class="nav_symbols">
+        <img src="./assets/img/Home.png" alt="Home Button" />
+      </button>
+      <button class="nav_symbols">
+        <img src="./assets/img/Account.png" alt="Account Button" />
+      </button>
+      <button class="nav_symbols">
+        <img src="./assets/img/Orders.png" alt="Orders Button" />
+      </button>
       <div class="navBasketCount">
-        <button class="nav_symbols" ><img id="basketIcon" src="./assets/img/Basket.png" alt="Basket Button" onclick="toggleBasket()"></button>
+        <button class="nav_symbols">
+          <img
+            id="basketIcon"
+            src="./assets/img/Basket.png"
+            alt="Basket Button"
+            onclick="toggleBasket()"
+          />
+        </button>
         <span class="amountNavNumberDishes" id="basketNavCount">0</span>
       </div>
     </nav>

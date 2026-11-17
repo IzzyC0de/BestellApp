@@ -1,7 +1,6 @@
 // HTML templates go here
 
-function getDishTemplate(indexDishes) {
-  let priceFormated = myDishes[indexDishes].price;
+function getDishTemplate(indexDishes, priceFormated) {
   return `
 
   <div class="templateDishes">
@@ -18,7 +17,7 @@ function getDishTemplate(indexDishes) {
         </span>
       </div>
       <div class="priceButton">
-        <span class="price">${myDishes[indexDishes].price.toFixed(2)}</span>
+        <span class="price">${priceFormated}</span>
         <div class="buttonWrapper">
           <button class="animated-button" onclick="addToBasket(${indexDishes})">
             <span>Add to basket</span>
@@ -33,8 +32,7 @@ function getDishTemplate(indexDishes) {
   </div>`;
 }
 
-function getBasketTemplate(myBasket, indexBasket) {
-  let subPrice = myBasket.price * myBasket.amount;
+function getBasketTemplate(myBasket, indexBasket, subPrice) {
   return `
   
       <div class="basketItem">

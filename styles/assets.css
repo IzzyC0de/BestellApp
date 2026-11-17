@@ -1,7 +1,6 @@
 /* Buttons and other UI elements go here */
 
-
-.basketBuyButton{
+.basketBuyButton {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -29,7 +28,7 @@
   position: relative;
 }
 
-.amountNumberDishes{
+.amountNumberDishes {
   width: 24px;
   height: 24px;
   background-color: white;
@@ -78,10 +77,6 @@
   opacity: 1;
 }
 
-
-
-
-
 #buyButton {
   background-color: var(--primary-color);
   color: white;
@@ -90,11 +85,11 @@
   font-size: var(--font-span-big);
 }
 
-.navBasketCount{
+.navBasketCount {
   position: relative;
 }
 
-.amountNavNumberDishes{
+.amountNavNumberDishes {
   width: 24px;
   height: 24px;
   background-color: white;

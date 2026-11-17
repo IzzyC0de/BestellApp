@@ -5,10 +5,13 @@ function renderDishes() {
     if (element) element.innerHTML = "";
   });
 
+  renderDishesByCategory();
+}
+
+function renderDishesByCategory() {
   for (let indexDishes = 0; indexDishes < myDishes.length; indexDishes++) {
     const dish = myDishes[indexDishes];
     let targetId = "";
-
     if (dish.category === "Burger") {
       targetId = "burgerList";
     } else if (dish.category === "Pizza") {
@@ -16,10 +19,10 @@ function renderDishes() {
     } else if (dish.category === "Salad") {
       targetId = "saladList";
     }
-
     if (targetId) {
+      let priceFormated = dish.price.toFixed(2);
       document.getElementById(targetId).innerHTML +=
-        getDishTemplate(indexDishes);
+        getDishTemplate(indexDishes, priceFormated);
     }
   }
 }
@@ -29,7 +32,8 @@ function renderBasket() {
   basketRef.innerHTML = "";
   for (let indexBasket = 0; indexBasket < basket.length; indexBasket++) {
     const myBasket = basket[indexBasket];
-    basketRef.innerHTML += getBasketTemplate(myBasket, indexBasket);
+    let subPrice = myBasket.price * myBasket.amount;
+    basketRef.innerHTML += getBasketTemplate(myBasket, indexBasket, subPrice);
   }
   basketCalculator();
   for (let indexDishes = 0; indexDishes < myDishes.length; indexDishes++) {
@@ -88,25 +92,26 @@ function basketCalculator() {
 }
 
 function showDialog() {
-
   if (basket.length === 0) return;
-  let basketRef = document.getElementById("basketDishes");
   let Dialog = document.getElementById("myDialog");
   Dialog.showModal();
   document.body.style.overflow = "hidden";
   Dialog.onclose = () => {
-  document.body.style.overflow = "";
+    document.body.style.overflow = "";
   };
-  Dialog.classList.add("active")
-  setTimeout(() =>{
+  Dialog.classList.add("active");
+  setTimeout(() => {
     Dialog.close();
-    Dialog.classList.remove("active")
+    Dialog.classList.remove("active");
   }, 4000);
+  resetBasket();
+}
+
+function resetBasket() {
   basket.length = 0;
   renderBasket();
   document.getElementById("basket").classList.remove("active");
-document.getElementById("basketIcon").src = "./assets/img/Basket.png";
-  basketRef.innerHTML = "";
+  document.getElementById("basketIcon").src = "./assets/img/Basket.png";
 }
 
 function toggleBasket() {

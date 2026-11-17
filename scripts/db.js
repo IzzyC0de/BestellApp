@@ -1,4 +1,4 @@
-// Hier kommt der array rein
+// The array goes here
 
 let basket = [];
 

@@ -1,10 +1,10 @@
-/* Diese Klasse verknüpft dein HTML mit der Schriftart */
+/* This class connects your HTML to the font */
 .material-symbols-rounded {
   font-family: "Material Symbols Rounded";
   font-weight: normal;
   font-style: normal;
   font-size: 20px;
-  height: 20px; /* Standardgröße */
+  height: 20px; /* Default size */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -15,12 +15,13 @@
   color: rgb(0, 0, 0);
   border: none;
   background: none;
-  /* Sorgt für scharfe Icons im Browser */
+  cursor: pointer;
+  /* Keeps icons sharp in the browser */
   -webkit-font-smoothing: antialiased;
 }
 
 :root {
-  /* Farben */
+  /* Colors */
   --primary-color: #e76c1f;
   --secondary-color: #fdeadc;
   --highlights-color: #FACAAC;
@@ -41,7 +42,7 @@
 
   --text-color-creamyorange: #fdeadc;
 
-  /* Breite des Inhaltes */
+  /* Content width */
   --section-width: 1440px;
 }
 
@@ -50,12 +51,12 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; /* Optional: Entfernt Standard-Abstände vom Browser */
+  padding: 0; /* Optional: Removes default browser spacing */
 }
 
 body {
-  line-height: 1.5; /* Verbessert die Lesbarkeit von Text */
-  -webkit-font-smoothing: antialiased; /* Macht Schriften auf Mac schöner */
+  line-height: 1.5; /* Improves text readability */
+  -webkit-font-smoothing: antialiased; /* Improves font rendering on Mac */
   font-family: var(--main-font);
   /* overflow-x: hidden; */
 }

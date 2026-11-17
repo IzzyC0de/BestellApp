@@ -1,4 +1,4 @@
-// Hier kommt der HTML Template rein
+// HTML templates go here
 
 function getDishTemplate(indexDishes) {
   let priceFormated = myDishes[indexDishes].price;
@@ -41,7 +41,7 @@ function getBasketTemplate(myBasket, indexBasket) {
         <h3>${myBasket.name}</h3>
         <div class="basketAmountPrice">
           <div class="amountDishes">
-            <button class="material-symbols-rounded" onclick="deleteFromBasket(${indexBasket})">delete</button>
+            <button class="material-symbols-rounded" onclick="deleteFromBasket(${indexBasket})">${myBasket.amount > 1 ? "remove" : "delete"}</button>
             <span class="amountNumber">${myBasket.amount}</span>
             <button class="material-symbols-rounded" onclick="amountPlusBasket(${indexBasket})">add</button>
           </div>

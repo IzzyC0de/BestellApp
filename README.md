@@ -1,44 +1,44 @@
 # 🍔 BestellApp
 
-Eine responsive Bestell-App für ein fiktives Restaurant, entwickelt mit **HTML, CSS und JavaScript**.
+A responsive food ordering app for a fictional restaurant, built with **HTML, CSS, and JavaScript**.
 
-## 🚀 Funktionen
+## 🚀 Features
 
-- Gerichte aus verschiedenen Kategorien anzeigen
-- Gerichte zum Warenkorb hinzufügen und entfernen
-- Bestellmengen anpassen
-- Automatische Berechnung von Gesamtpreis und Lieferkosten
-- Bestellung simulieren und bestätigen
-- Responsive Darstellung für Desktop und Smartphone
+- View dishes from different categories
+- Add dishes to and remove them from the basket
+- Adjust item quantities
+- Automatically calculate the total price and delivery fee
+- Simulate and confirm an order
+- Responsive layout for desktop and mobile
 
-## 🛠️ Technologien
+## 🛠️ Technologies
 
-- **HTML5** – Struktur
-- **CSS3** – Design und Layout
-- **JavaScript** – Interaktivität und Warenkorbverwaltung
+- **HTML5** – Structure
+- **CSS3** – Design and layout
+- **JavaScript** – Interactivity and basket management
 
 ## 📦 Installation
 
-Repository klonen:
+Clone the repository:
 
 ```bash
 git clone https://github.com/IzzyC0de/BestellApp.git
 ```
 
-Anschließend die `index.html` im Browser öffnen.
+Then open `index.html` in your browser.
 
-## 🎯 Lernziele
+## 🎯 Learning Objectives
 
-- DOM-Manipulation
-- JavaScript-Arrays und Objekte
-- Event-Handling
-- Dynamische Inhalte
-- Responsive Webdesign
+- DOM manipulation
+- JavaScript arrays and objects
+- Event handling
+- Dynamic content
+- Responsive web design
 
-## 👨‍💻 Entwickler
+## 👨‍💻 Developer
 
 **IzzyC0de**
 
-[GitHub-Profil](https://github.com/IzzyC0de)
+[GitHub Profile](https://github.com/IzzyC0de)
 
-*Erstellt im Rahmen meiner Weiterbildung zum Full-Stack-Developer.*
+*Created as part of my training to become a full-stack developer.*
